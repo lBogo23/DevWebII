@@ -1,0 +1,80 @@
+INTERNACIONALIZAÇÃO E LOCALIZAÇÃO - DESENVOLVIMENTO WEB 2:
+
+Internacionalização: é o processo de preparação do código do aplicativo para suportar vários idiomas,
+
+Também pe conhecida como i18n, porque o numero de caracteres entre o primeiro e o ultimo caractrere é 18
+
+em ingles: i 18 n = internalization
+
+////////////////////////////////////////////////////////
+
+Localização: é o processo de adaptação de um aplicativo internacionalizado de modo que ele suporte uma linguagem ou um local específico.
+
+Um local é um ambiente que inclui informações especificas regionais e de linguagem.
+
+Também é conhecida como L10N
+
+Em inglês: L 10 N = LOCALIZATION
+
+TEMPO - MOEDA - IDIOMA.
+
+o tempo, moeda e idioma muda de localização para localização
+
+/////////////////////////////////////////////////////////
+
+RELAÇÃO ENTRE INTERNACIONALIZAÇÃO E LOCALIZAÇÃO:
+
+A internacionalização envolve o isolamento de partes do aplicativo que apresentam dados de saida para o usuário de modo que os dados podem ser convertidos para linguagem adequada e conjunto de caracteres.
+
+ou seja: o seu aplicativo ja fica com configuração de rótulos, rotulos são tudo que são mostrados na tela; Os rótulos substituem os textos.
+
+Exemplo: ao invés de inserir text = Cadastra, se utiliza:
+text:#{form.cadastrar}
+
+Assim fica flexível. qualquer idioma que voce passar e voce ter o arquivo de propriedades ele vai receber esse rótulo receber o texto que está no rótulo e vai completar a saída.
+
+A LOCALIZAÇÃO envolve a tradução dessas correntes em uma linguagem específica e mantê-las em um arquivo que o aplicativo possa acessar - por exemplo, um arquivo de propriedade. Teremos um arquivo de propriedades para portugues br, ingles us, etc.
+
+Assim, internacionalizar um arquivo permite que ele seja adaptado a novas linguagens e regiões, enquanto a localização fornece a adaptação de um aplicativo internacionalizado a um país ou região específica.
+
+internacionalizada está pronta para suportar varios idiomas e localização é quando voce adapta isso, como idioma, moeda, tempo, etc.
+
+
+//////////////////////////////////////////////////////////
+
+Os aplicativos precisam personalizar a apresentação dos dados de acordo com o local do usuário.
+
+Um aplicativo deve ser internacionalizado e depois pode ser localizado.
+
+A internacioonalização e localização tornam os aplicativos disponíveis para um publico global
+
+Se adequa a localização do usuário, mudando, de acordo com o local, mudará o tipo de data, a moeda local, tornando assim, mais viável e intuitivo para qualuqer usuário independente do idioma, e localização mundial.
+
+
+Outra vantagem do rótulo, mesmo que voce não deseje expandir o seu negócio, mesmo assim é interessante usar a internacionalização pois é possivel alterar os paramentros para se adequar aos desejos do cliente, por exemplo, alterar o botão cadastrar para salvar. Fica mais facil alterar a sua aplicação posteriormente, mudando apenas o rótulo.
+
+////////////////////////////////////////////////////////
+
+FUNCIONAMENTO DA INTERNACIONALIZAÇÃO
+
+durante a internacionalização as dependencias locais são separadas de um código fonte de aplicação.
+
+Os exemplos dessas dependencias locais incluem os rótulos da interface com o usuário; o conjunto de caracteres de mensagens; a codificação; e formatos numéricos de moeda e de tempo. todos esse arquivos serão considereados.
+
+NA LOCALIZAÇÃO, durante a localização, uma aplicação internacionalizada é adaptada a um local específico.
+
+//////////////////////////////////////////////////////////
+
+RECOMENDAÇÕES
+
+A internacionalização é normalmente supervisionada ao desenvolver um aplicativo da web corporativo porque esses tipos de aplicativo são normalmente direcionados a um espaço de usuário local especifico.
+
+Ao desenvolver um aplicativo que pode ser usado globalmente voce deve considerar a internacionlaização desde o inicio.
+Por que é muito mais facil ja projetar a aplicação do que ter que adaptar a mesma. Poise, por exemplo, se a sua aplicação tem varios formulários, voce teria que passar em formulário por formulário alterando o campo para internacionalizar sua aplicação, dificultando e atrasando seu trabalho. Fica mais fácil ter um formulário padrão no CRUD e alterar apenas o rótulo quando ja está internacionalizado.
+
+Portanto, é mais fácil projetar uma aplicação que seja capaz de ser internacionalizada em vez de reprojetar uma aplicação existente posteriormente. 
+
+Ou seja, planejar a internacionalização e localização no inicio te economizará tempo e dinheiro pois não será necessário ter gasto com mão de obra e tempo perdido na recodificação do aplicativo.
+
+/////////////////////////////////////////////////////////
+
